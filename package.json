@@ -5,8 +5,7 @@
   "main": "dist/cuttr.js",
   "unpkg": "dist/cuttr.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx npm-force-resolutions"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "resolutions": {
     "glob-parent": "^6.0.1",
