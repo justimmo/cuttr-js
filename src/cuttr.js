@@ -208,12 +208,12 @@
                 //  truncate full sentences
                 case 'sentences':
 
-                    const sentences = str.match(/[^\.!\?]+[\.!\?]+/g);
+                    const sentences = str.match(/[^\.!\?]+[\.!\?]+/g) ?? [];
 
                     //  check if content (string) is longer than truncation limit
                     if (sentences.length > length) {
 
-                        //  set current contetn truncation true and return truncated string
+                        //  set current content truncation true and return truncated string
                         self.options.contentTruncationState[thisIndex] = true;
                         //  set visibility state
                         self.options.contentVisibilityState[thisIndex] = false;
