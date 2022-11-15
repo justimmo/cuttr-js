@@ -189,7 +189,7 @@
 
         //  truncate full sentences
         case 'sentences':
-          var sentences = (_str$match = str.match(/[^\.!\?]+[\.!\?]+/g)) != null ? _str$match : [];
+          var sentences = (_str$match = str.match(/[^\.!\:\?]+[\.!\:\?]+/g)) != null ? _str$match : [];
 
           //  check if content (string) is longer than truncation limit
           if (sentences.length > length) {
